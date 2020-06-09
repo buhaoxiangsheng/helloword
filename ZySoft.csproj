@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB671A3F-3D9D-4458-A573-9ACF4DD13C5D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>zySoft</RootNamespace>
+    <AssemblyName>zySoft</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>BA5C1A0DB40D87378AFBE82EBF400079722034FE</ManifestCertificateThumbprint>
+    <ManifestKeyFile>SY_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <StartupObject>
+    </StartupObject>
+    <ApplicationIcon>oem.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>d:\My Documents\sy\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Chanjet.TP.OpenAPI">
+      <HintPath>..\..\..\..\t+openapi范例\Chanjet.TP.OpenAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="Chanjet.TP.OpenAPI.SignatureGen">
+      <HintPath>..\..\..\..\t+openapi范例\opanapi类库\Chanjet.TP.OpenAPI.SignatureGen_Csharp\Chanjet.TP.OpenAPI.SignatureGen.dll</HintPath>
+    </Reference>
+    <Reference Include="CSharp-easy-RSA-PEM">
+      <HintPath>..\..\..\..\t+openapi范例\opanapi类库\Chanjet.TP.OpenAPI.SignatureGen_Csharp\CSharp-easy-RSA-PEM.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="jose-jwt">
+      <HintPath>..\..\..\..\t+openapi范例\opanapi类库\Chanjet.TP.OpenAPI.SignatureGen_Csharp\jose-jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\t+openapi范例\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\..\..\..\t+openapi范例\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ufida.T.EAP.AopBase">
+      <HintPath>..\..\..\..\t+openapi范例\Ufida.T.EAP.AopBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Ufida.T.EAP.Net">
+      <HintPath>..\..\..\..\t+openapi范例\Ufida.T.EAP.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Ufida.T.EAP.NetJoin.Utility">
+      <HintPath>..\..\..\..\t+openapi范例\Ufida.T.EAP.NetJoin.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Ufida.T.EAP.Rest">
+      <HintPath>..\..\..\..\t+openapi范例\Ufida.T.EAP.Rest.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carweighing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carweighing.Designer.cs">
+      <DependentUpon>carweighing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="checkvouch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="checkvouch.Designer.cs">
+      <DependentUpon>checkvouch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="insertvouchar.cs" />
+    <Compile Include="CommonClass.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="intercalate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="intercalate.Designer.cs">
+      <DependentUpon>intercalate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyException.cs" />
+    <Compile Include="selectkh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selectkh.Designer.cs">
+      <DependentUpon>selectkh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeightFrn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WeightFrn.Designer.cs">
+      <DependentUpon>WeightFrn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inventory.Designer.cs">
+      <DependentUpon>inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoSelect.Designer.cs">
+      <DependentUpon>MoSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="optionFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="optionFrm.Designer.cs">
+      <DependentUpon>optionFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="password.Designer.cs">
+      <DependentUpon>password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user.Designer.cs">
+      <DependentUpon>user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm1.Designer.cs">
+      <DependentUpon>mainForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userclass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userclass.Designer.cs">
+      <DependentUpon>userclass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeightSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WeightSelect.Designer.cs">
+      <DependentUpon>WeightSelect.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="carweighing.resx">
+      <DependentUpon>carweighing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="checkvouch.resx">
+      <DependentUpon>checkvouch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="intercalate.resx">
+      <DependentUpon>intercalate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selectkh.resx">
+      <DependentUpon>selectkh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeightFrn.resx">
+      <DependentUpon>WeightFrn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventory.resx">
+      <DependentUpon>inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoSelect.resx">
+      <DependentUpon>MoSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="optionFrm.resx">
+      <DependentUpon>optionFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="password.resx">
+      <DependentUpon>password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="user.resx">
+      <DependentUpon>user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm1.resx">
+      <DependentUpon>mainForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userclass.resx">
+      <DependentUpon>userclass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeightSelect.resx">
+      <DependentUpon>WeightSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxgrproLib">
+      <Guid>{715CBE0F-4F50-46EF-B009-CACED3A5C868}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="grproLib">
+      <Guid>{715CBE0F-4F50-46EF-B009-CACED3A5C868}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="oem.ico" />
+    <None Include="png\cert.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
